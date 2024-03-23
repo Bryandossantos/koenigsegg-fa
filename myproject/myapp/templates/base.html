@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Koenigsegg</title>
+</head>
+<body>
+    <header>
+        <h1>Seja bem vindo ao site de um fã da Koenigsegg</h1>
+    </header>
+    
+    <nav>
+        <a href="/page1" id="button1">History</a>
+        <a href="/page2" id="button2">Cars</a>
+        <a href="/page3" id="button3">Founders</a>
+    </nav>
+    <main>
+        <article>
+            <h2>O que falamos aqui?</h2>
+            <p>Como já ficou claro no titulo falamos das criações absurdas da <a href="https://www.koenigsegg.com/home" target="_blank">Koenigsegg</a>, sendo um site feito de fã para fã dessa empresa insana</p>
+            <img src="../static/Koenigsegg-Logo.png" alt="Simbolo">
+            <p>Cujo simbolo acima, faz qualquer empresa tremer na base, também alguns paíse europeus dos quais a Koenigsegg é proibida de circular em suas ruas, caso queira saber mais acesse as opções acima para a historia da empresa, seus carros e a familia que criou essa empresa que gera tantos monstros</p>
+        </article>
+    </main>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
